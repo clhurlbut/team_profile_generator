@@ -29,18 +29,21 @@ test("Returns name of Employee", () => {
     const employee = new Employee(testName);
     expect(employee.getName()).toBe(testName);
 });
+
 test("Returns ID number of Employee", () => {
     const testId = 1234;
     const employee = new Employee("Bill", testId);
     expect(employee.getId()).toBe(testId);
 });
+
 test("Returns Email of Employee", () => {
     const testEmail = "1234@test.com";
     const employee = new Employee("Bill", 1234, testEmail);
     expect(employee.getEmail()).toBe(testEmail);
 });
+
 test("Returns \"Employee\" as job role", () => {
-    const testRole = "Unemployed"
+    const testRole = "Employee"
     const employee = new Employee("Bill", 1234, "1234@test.com");
     expect(employee.getRole()).toBe(testRole)
 });
