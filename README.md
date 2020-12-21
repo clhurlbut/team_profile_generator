@@ -39,7 +39,14 @@
   Tests run using Jest. 
  4 Test Suites, 17 Tests. 
 
- ![Screenshot of Tests]()
+ ![Screenshot of Tests](/assets/Employee_test_2.jpg)
+ ![Screenshot of Tests](/assets/Engineer_test.jpg)
+ ![Screenshot of Tests](/assets/internFail.jpg)
+ ![Screenshot of Tests](/assets/internPass.jpg)
+ ![Screenshot of Tests](/assets/ManagerFail.jpg)
+ ![Screenshot of Tests](/assets/ManagerPass.jpg)
+ ![Screenshot of Tests](/assets/testsAllPass.jpg)
+
 
 
 
