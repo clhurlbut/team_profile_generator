@@ -1,18 +1,20 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const Employee = require("./lib/Employee");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
 
 let finalTeam = [];
 
+
+
 function startPrompt() {
     inquirer.prompt([
         {
             message: "Let's make a team profile! What is the name of your team?",
-            name: "teamname"
+            name: "teamname",
+            type: "input"
         }
     ])
         .then(function (data) {
@@ -29,6 +31,11 @@ function addManager() {
             name: "name"
         },
         {
+            type: "number",
+            message: "What is the ID number of the team manager?",
+            name: "id"
+        },
+        {
             message: "What is the email of the team manager?",
             name: "email"
         },
@@ -41,7 +48,7 @@ function addManager() {
     ])
         .then(function (data) {
             const name = data.name
-            const id = 1
+            const id = data.id
             const email = data.email
             const officeNumber = data.officeNumber
             const teamMember = new Manager(name, id, email, officeNumber)
@@ -83,6 +90,11 @@ function addEngineer() {
             name: "name"
         },
         {
+            type: "number",
+            message: "What is the ID number of the engineer?",
+            name: "id"
+        },
+        {
             message: "What is the email address of the engineer?",
             name: "email"
         },
@@ -93,7 +105,7 @@ function addEngineer() {
     ])
         .then(function (data) {
             const name = data.name
-            const id = finalTeam.length + 1
+            const id = data.id
             const email = data.email
             const github = data.github
             const teamMember = new Engineer(name, id, email, github)
@@ -109,6 +121,11 @@ function addIntern() {
             name: "name"
         },
         {
+            type: "number",
+            message: "What is the ID number of the intern?",
+            name: "id"
+        },
+        {
             message: "What is the email address of the intern?",
             name: "email"
         },
@@ -119,7 +136,7 @@ function addIntern() {
     ])
         .then(function (data) {
             const name = data.name
-            const id = finalTeam.length + 1
+            const id = data.id
             const email = data.email
             const school = data.school
             const teamMember = new Intern(name, id, email, school)
