@@ -8,6 +8,10 @@
   ## Description
    A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
 
+  ![Screenshot of output HTML page](/assets/deployedPage.jpg)
+  
+   [Click Here for Video Demo!](https://drive.google.com/file/d/1rsPCIQHrn7unWxf4mIwiWW1Y4hr8mgU6/view)
+
 
   ## 🔎 Table of Contents
   - [Description](#Description)
@@ -32,9 +36,7 @@
     `node index.js` 
 
   ## ➕ Features
-   node.JS Inquirer ES6
-
-   [Click Here for Video Demo!](https://drive.google.com/file/d/1rsPCIQHrn7unWxf4mIwiWW1Y4hr8mgU6/view)
+   node.JS Inquirer ES6 Jest 
 
   ## 💾 Tests
   Tests run using Jest. 
