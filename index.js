@@ -159,8 +159,8 @@ function createProfile() {
     for (let i = 1; i < finalTeam.length; i++) {
         let employeeCard = `
         <div id="employeeCard" class="col-md-4">
-    <div class="card text-white bg-primary">
-        <h5 class="card-header">
+    <div class="card text-black">
+        <h5 class="card-header bg-primary">
             ${finalTeam[i].name}
         </h5>
         <div class="card-body">
@@ -201,12 +201,12 @@ function createProfile() {
         htmlComplete.push(employeeCard)
     }
     const htmlEnd = `
-</div>
-                            </div>
-                            <footer>
-                                <br>
-                                    <h6> Made with 🐎 by Cassandra Hurlbut &copy; 2020 Cassandra Hurlbut </h6>
-    </footer>
+    </div>
+            </div>
+            <footer>
+                <br>
+                <p> Made with 🐎 by Cassandra Hurlbut &copy; 2020 Cassandra Hurlbut </p>
+            </footer>
 </body>
 
 </html>
